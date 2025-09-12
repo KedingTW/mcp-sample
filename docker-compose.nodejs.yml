@@ -43,7 +43,7 @@ services:
 
   mcp-server:
     build:
-      context: ./mcp-server
+      context: ./mcp-server-nodejs
       dockerfile: Dockerfile
     container_name: attendance_mcp_server
     restart: unless-stopped
