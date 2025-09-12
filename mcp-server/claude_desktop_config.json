@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mysql-attendance": {
+      "command": "docker",
+      "args": ["exec", "-i", "attendance_mcp_server", "node", "server.js"],
+      "env": { "NODE_ENV": "production" }
+    }
+  }
+}

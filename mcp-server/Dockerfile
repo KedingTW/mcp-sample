@@ -23,4 +23,4 @@ RUN chmod +x server.js
 EXPOSE 3001
 
 # 執行應用程式
-CMD ["npm", "start"]
+CMD ["sleep", "infinity"]

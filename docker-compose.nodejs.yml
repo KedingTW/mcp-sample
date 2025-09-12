@@ -47,6 +47,8 @@ services:
       dockerfile: Dockerfile
     container_name: attendance_mcp_server
     restart: unless-stopped
+    stdin_open: true
+    tty: true
     environment:
       DB_HOST: mysql
       DB_PORT: 3306

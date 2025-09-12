@@ -989,7 +989,7 @@ class MySQLMCPServer {
   async run() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.error("MySQL MCP 伺服器已啟動");
+    // console.log("MySQL MCP 伺服器已啟動");
   }
 }
 

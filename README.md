@@ -5,23 +5,22 @@
 1. 安裝Claude Desktop或其他支援MCP的AI工具
 2. 安裝Docker
 
-## 啟動流程
+## 啟動流程 - NodeJs版本
 
-1. `docker compose up -d`
+1. `docker compose -f docker-compose.nodejs.yml up -d`
 2. 開啟http://localhost:8080，進入phpMyAdmin，確認資料庫建立完成
 3. 修改claude_desktop_config.json
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 - MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
 ```
+// ./mcp-server/claude_desktop_config.json
 {
   "mcpServers": {
     "mysql-attendance": {
-      "command": "node",
-      "args": ["專案路徑/mcp-server/server.js"],
-      "env": {
-        "NODE_ENV": "production"
-      }
+      "command": "docker",
+      "args": ["exec", "-i", "attendance_mcp_server", "node", "server.js"],
+      "env": { "NODE_ENV": "production" }
     }
   }
 }
