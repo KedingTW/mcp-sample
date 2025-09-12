@@ -1,0 +1,25 @@
+{
+  "name": "mysql-attendance-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for MySQL Attendance System",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "mysql-attendance-mcp-server": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --inspect server.js",
+    "docker:start": "node server.js > logs/mcp-server.log 2>&1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "mysql2": "^3.11.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mysql", "attendance", "server"],
+  "author": "Your Name",
+  "license": "MIT"
+}
