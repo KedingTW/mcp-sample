@@ -37,7 +37,8 @@
 修改後，記得重新啟動 Claude Desktop
 
 ### 開發資源
-https://github.com/php-mcp/laravel
+
+<a href="https://github.com/php-mcp/laravel" target="_blank">Laravel MCP</a>
 
 ---
 
