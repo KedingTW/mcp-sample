@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "mysql-attendance": {
+            "command": "docker",
+            "args": [
+                "exec",
+                "-i",
+                "attendance_mcp_server_php",
+                "php",
+                "artisan",
+                "mcp:service",
+                "--transport=stdio"
+            ]
+        }
+    }
+}
