@@ -7,9 +7,6 @@
 
 ## 啟動流程 - PHP + Laravel 版本
 
-### 開發資源
-https://github.com/php-mcp/laravel
-
 1. `docker compose -f docker-compose.php.yml up -d`
 2. 開啟 http://localhost:8080，進入 phpMyAdmin，確認資料庫建立完成
 3. 修改 claude_desktop_config.json
@@ -38,6 +35,11 @@ https://github.com/php-mcp/laravel
 ```
 
 修改後，記得重新啟動 Claude Desktop
+
+### 開發資源
+https://github.com/php-mcp/laravel
+
+---
 
 ## 啟動流程 - NodeJs 版本
 
